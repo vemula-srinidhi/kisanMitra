@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <style>
+      
+body {
+    font-family: Arial, sans-serif;
+    color: #000080;
+  }
+
+.header {
+    min-height: 5vh;
+    width:100%;
+   background-color: rgb(15, 85, 11);
+    background-position:center;
+    background-size: cover;
+   position: relative;
+           
+  }
+  
+nav ul {
+    display: flex;
+ba
+ 
+  }
+
+  .nav-links{
+    flex: 1;
+    text-align:center;
+    height: 10vh;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 20px;
+   
+
+  }
+  .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+  margin-right: 20px;
+ 
+
+  }
+  .nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background:#f44336;
+    display:block;
+  
+    transition: 0.5;
+
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+
+  }
+    </style>
+
+<body>
+    <header>
+        <section class="header">
+            <nav>
+                
+                <div class="nav-links">
+                    <ul>
+
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="purchase.html">Purchasing</a> </li>
+                        <li><a href="land.html">Landlease</a>
+                        <li><a href="pesticides.html">Pesticides</a>
+                            <li><a href="latesttech.html">Latest tech machinery</a>    
+                        <li><a href="soilfer.html">Soil fertility</a>
+                        <li><a
+                                href="contact.html">Contact</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+           
+        </section>
+   </header>     
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Market</title>
+    <link rel="stylesheet" href="purstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Farmers Market</h1>
+        <div id="userType">
+            <button id="loginFarmer">Login as Farmer</button>
+            <button id="loginCustomer">Login as Customer</button>
+        </div>
+    </header>
+    
+        <!-- Inside the <main> element -->
+<main id="content">
+    <h2>Welcome to Farmers Market</h2>
+    <p>
+        Farmers Market is your one-stop destination for buying and selling fresh agricultural produce.
+    </p>
+    <p>
+        Whether you are a farmer looking to sell your crops or a customer looking to buy fresh produce, you've come to the right place.
+    </p>
+    <p>
+        Please log in as either a farmer or a customer to get started.
+    </p>
+
+    <!-- Farmer's Crop Entry Form -->
+    <div id="farmerForm" style="display: none;">
+        <h3>Enter Crop Information</h3>
+        <form id="cropForm">
+            <label for="cropName">Crop Name:</label>
+            <input type="text" id="cropName" required><br>
+
+            <label for="cropQuantity">Available Quantity (in kg):</label>
+            <input type="number" id="cropQuantity" required><br>
+
+            <label for="cropPrice">Price (per kg):</label>
+            <input type="number" id="cropPrice" required><br>
+
+            <label for="availabilityDate">Expected Availability Date:</label>
+            <input type="date" id="availabilityDate" required><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</main>
+
+    </main>
+    <script src="scriptpur.js"></script>
+</body>
+</html>
